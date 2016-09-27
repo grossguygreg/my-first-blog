@@ -5,8 +5,18 @@
 	<body>
 		<div>
 		<h1> Hugos blog! </h1>
-		<p> Hejsansvejsanpådejsan</p>
 		</div>
+
+		
+		{% for post in posts %}
+			<div>
+				<h2>{{ post.title }}</h2>
+				<P>{{ post.text|linebreaksbr }}</p>
+				<p>Published: {{ post.published_date }}</p>
+				<br />
+ 			</div>		
+		{% endfor %}
+		
 	</body>
 	
 </html>
