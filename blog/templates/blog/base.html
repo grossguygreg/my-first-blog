@@ -3,15 +3,19 @@
 
 <html>
 	<head>
-		<title>Hugos blog</title>
+		<title>Dank Memes</title>
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|David+Libre|Rokkitt|Ubuntu|Yatra+One" rel="stylesheet">
 		<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+		<link rel="icon" href="https://pbs.twimg.com/profile_images/559166887968260096/e-SnfdE1_400x400.jpeg" size="64x64">
 	</head>
 	<body>
 		<div class="page-header">
-		<h1 id="ett">Hugos blog!</h1>
+		{% if user.is_authenticated %}
+		<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+		{% endif %}
+		<h1 id="ett">GROSSGUYGREG</h1>
 		<h1 id="tva">Dank memes and more</h1>
 		</div>
 

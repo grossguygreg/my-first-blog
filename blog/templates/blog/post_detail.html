@@ -2,6 +2,7 @@
 
 {% block content %}
 	<div class="post">
+		<a href="{% url 'post_list' %}" class="top-menu"><span class="glyphicon glyphicon-chevron-left"></span></a>
 		<h2 id="title"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
 		<P id= "text">{{ post.text|linebreaksbr }}</p>
 		<p id="published">Published: {{ post.published_date }}</p>
