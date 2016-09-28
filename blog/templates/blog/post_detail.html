@@ -9,4 +9,12 @@
 	</div>
 	<div class="comments">
 	</div>
+	{% for comment in post.comments.all %}
+		<h2 id="author">{{ post.author }}</h2>
+		<P id= "comment_text">{{ comment.text|linebreaks }}</p>
+		<p id="created">{{ comment.created_date }}</p>
+		<br />
+	{% empty %}
+	<p>No comments</p>
+	{% endfor %}
 {% endblock %}

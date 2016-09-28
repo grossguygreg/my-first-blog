@@ -57,7 +57,7 @@
 }
 #published {
 	text-align: right;
-	font-size: 75%;
+	font-size: 85%;
 }
 #text {
 	font-family: 'Rokkitt', serif;
@@ -80,4 +80,16 @@ a:hover {
 }
 a:active {
 	color: #000000
+}
+#comment_count {
+	font-size: 85%;
+}
+#author {
+	font-size: 150%;
+}
+#comment_text {
+	font-size: 50%;
+}
+#created {
+	font-size: 85%;
 }
