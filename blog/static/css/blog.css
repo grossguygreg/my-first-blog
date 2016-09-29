@@ -16,10 +16,10 @@
 
 
 .page-footer {
-	background-color: #DEDEDE;
+	background-color: #C2FFAD;
 	margin-top: 0;
 	padding: 20px 20px 20px 40px;
-	outline-color: #000000;
+	outline: #000000 solid thick;
 }
 #ett {
 	color: #000000;
@@ -64,10 +64,10 @@
 	font-size: 150%;
 }
 .page-header {
-	background-color: #DEDEDE;
+	background-color: #C2FFAD;
 	margin-top: 0;
 	padding: 20px 20px 20px 40px;
-	outline-color: #000000;
+	outline: #000000 solid thick;
 }
 a:link {
 	color: #000000

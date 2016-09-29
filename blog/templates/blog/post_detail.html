@@ -9,12 +9,15 @@
 	</div>
 	<div class="comments">
 	</div>
+	<a class="btn btn-default" href="{% url 'add_comment_to_post' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"</span></a>
+	<br />
 	{% for comment in post.comments.all %}
 		<h2 id="author">{{ post.author }}</h2>
 		<P id= "comment_text">{{ comment.text|linebreaks }}</p>
 		<p id="created">{{ comment.created_date }}</p>
 		<br />
 	{% empty %}
+	<br />
 	<p>No comments</p>
 	{% endfor %}
 {% endblock %}
